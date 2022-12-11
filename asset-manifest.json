@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/check24/static/css/main.a1a7dfa6.css",
+    "main.js": "/check24/static/js/main.a6cafce0.js",
+    "static/media/urlaub.jpeg": "/check24/static/media/urlaub.d2d4e0bd2141ceb11860.jpeg",
+    "static/media/check24-logo.png": "/check24/static/media/check24-logo.c43a8c5ad423e0fe0683.png",
+    "static/media/user.png": "/check24/static/media/user.557587208eb9e232f2ca.png",
+    "static/media/close.png": "/check24/static/media/close.785aa15ad2021922596e.png",
+    "index.html": "/check24/index.html",
+    "main.a1a7dfa6.css.map": "/check24/static/css/main.a1a7dfa6.css.map",
+    "main.a6cafce0.js.map": "/check24/static/js/main.a6cafce0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1a7dfa6.css",
+    "static/js/main.a6cafce0.js"
+  ]
+}

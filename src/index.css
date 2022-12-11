@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+
+:root {
+
+    --darkBlue: #063773;
+    --blue: #0271c2;
+    --yellow: #ffbb1c;
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Loading Circle */
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*  - - - - */
+.p-lr {
+    padding: 0 10px;
+}
+
+.p-l {
+    padding-left: 10px;
+}
+
+.p-r {
+    padding-right: 10px;
+}
+
+/* Navbar */
+.navigationbar {
+    background-color: var(--darkBlue);
+    color: #fff;
+    padding: 0 3%;
+}
+
+nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: .5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav .brand {
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav .logo {
+    filter: invert(1);
+    height: 30px;
+    margin-bottom: 10%;
+    margin-right: 10px;
+}
+
+nav h3 {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 400;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+}
+
+
+/* Home */
+.home-bg {
+    background: url('https://ctsassets1.check24.de/size=332c155/di=3/nfc=999/source=aHR0cHM6Ly9iaWdhc3NldHMudXJsYXViLmNoZWNrMjQuZGUvZGVmYXVsdC9yZWdpb24vdXJsYXViLzU0Nl9sYXJnZS5qcGc=!c2cbb1/picture.jpg?cts_p=PR&cts_do=desktop&cts_s=lp');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    background-size: cover;
+}
+
+.home {
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 15px;
+    /* width: 60%; */
+    height: 60%;
+}
+
+.home h1,
+.home p {
+    font-weight: 600;
+}
+
+.home p {
+    font-size: 17px;
+}
+
+.search-window {
+    background-color: var(--yellow);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 5px 5px 5px;
+}
+
+.primary-button {
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 30px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+    border: none;
+
+}
+
+/* Login Modal */
+.close-button {
+    float: right;
+    border: none;
+    background: transparent;
+}
+
+.close-button img {
+    float: right;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+
+.loginmodal {
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    max-width: 340px;
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    padding: 30px;
+    z-index: 2;
+}
+
+.loginmodal h2,
+.loginmodal p {
+    color: #fff;
+    font-style: italic;
+    margin-left: 5%;
+}
+
+.loginmodal form {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.loginmodal form button {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.loginmodal input {
+    border-radius: 3px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid rgb(30, 30, 30);
+    padding: 10px 17px 10px 17px;
+    box-sizing: border-box;
+}
+
+
+
+/* Search */
+.flightAndHotel .text-field-wrapper {
+    position: relative;
+}
+
+.text-field-wrapper input[type=text],
+.text-field-wrapper input[type=number],
+.text-field-wrapper input[type=date],
+.text-field-wrapper select {
+    border-radius: 3px;
+    width: 100%;
+    height: 65px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid rgb(30, 30, 30);
+    padding: 20px 17px 5px 17px;
+    box-sizing: border-box;
+}
+
+.text-field-wrapper input[type=submit] {
+    width: 100%;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 30px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+    border: none;
+}
+
+.text-field-wrapper input[type=submit]:hover {
+    background-color: var(--darkBlue);
+}
+
+.flightAndHotel label {
+    display: inline;
+    color: rgb(67, 65, 65);
+    position: absolute;
+    top: 4px;
+    left: 17px;
+    font-size: 15px;
+}
+
+
+.view-button {
+    padding: 12px 30px;
+    background-color: #ffd063;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.view-button:disabled {
+    background-color: var(--yellow);
+    color: #000;
+}
+
+/* Results */
+.resultpage {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.filter-container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 32%;
+    text-align: left;
+    height: 100vh;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.results-container {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px 40px;
+}
+
+.filter-container .filter {
+    width: 100%;
+    height: 60%;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.filter-container .search-window {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.filter-container .view-button {
+    font-size: 12px;
+}
+
+.filter-container .text-field-wrapper label {
+    font-size: 10px;
+}
+
+/* Loaded Hotels */
+
+.loadedhotels {
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+}
+
+.loadedhotels img {
+    width: 100%;
+    height: 100%;
+}
+
+.loadedhotels .details {
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+}
+
+.loadedhotels .details button {
+    /* width: 50%; */
+
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 20px;
+    /* margin: 10px 0 0 0; */
+    border-radius: 3px;
+    border: none;
+}
+
+.loadedhotels .details button:hover {
+    background-color: var(--darkBlue);
+}
+
+/* Loaded Flights & Hotels */
+.loadedIndivHotels {
+    margin-bottom: 20px;
+}
+
+.loadedIndivHotels button {
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+.loadedIndivHotels button:hover {
+    background-color: var(--darkBlue);
+}
+
+.loadedIndivHotels .results {
+    background: url('https://www.reisecheckliste.org/wp-content/uploads/2017/09/Reisecheckliste-Strandurlaub.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(74, 74, 74);
+    border-radius: 5px;
+    padding: 20px;
+    padding-right: 40px;
+    border-color: #000;
+    text-align: right;
+}

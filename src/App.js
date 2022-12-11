@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import { useState } from 'react'
 import ResultPage from './pages/ResultPage';
@@ -31,7 +31,7 @@ const App = () => {
     showLogin(!Login)
   }
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<Home
           loader={loader} showLoader={showLoader}
@@ -58,7 +58,7 @@ const App = () => {
           currentHotelOffers={currentHotelOffers}
         />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
